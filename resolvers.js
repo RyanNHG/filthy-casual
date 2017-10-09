@@ -17,7 +17,7 @@ const resolvers = {
   },
   Name: {
     full: (name) =>
-      name.first + (name.middle ? ` ${name.middle} ` : '') + name.last
+      name.first + (name.middle ? ` ${name.middle} ` : ' ') + name.last
   }
 }
 

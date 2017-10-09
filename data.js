@@ -15,7 +15,7 @@ casual.define('author', (id) => ({
   id,
   name: {
     first: casual.first_name,
-    middle: casual.first_name,
+    middle: (casual.random < 0.5) ? casual.first_name : undefined,
     last: casual.last_name
   }
 }))

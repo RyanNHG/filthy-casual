@@ -1,0 +1,23 @@
+type Author {
+    id: Int!
+    name: Name!
+    posts: [Post!]!
+}
+
+type Post {
+    id: Int!
+    title: String!
+    author: Author!
+}
+
+type Name {
+    first: String!
+    middle: String
+    last: String!
+    full: String!
+}
+
+type Query {
+    posts: [Post!]!
+    author(id: Int!): Author!
+}

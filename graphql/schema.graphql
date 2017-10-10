@@ -18,6 +18,8 @@ type Name {
 }
 
 type Query {
-    posts: [Post!]!
-    author(id: Int!): Author!
+    posts(page: Int): [Post!]!
+    authors(page: Int): [Author!]!
+    author(id: Int!): Author
+    post(id: Int!): Post
 }
